@@ -1,11 +1,10 @@
-import React from 'react'
-
-const DashBoard = () => {
+function DashBoard({ setIsAuthenticated }) {
   return (
-    <div>
-      
+    <div className="dashboard">
+      <h1>Welcome to Dashboard 🎉</h1>
+      <button onClick={() => setIsAuthenticated(false)}>Logout</button>
     </div>
-  )
+  );
 }
 
-export default DashBoard
+export default DashBoard;

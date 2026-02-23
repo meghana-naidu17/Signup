@@ -1,11 +1,22 @@
-import React from 'react'
+import { useState } from "react";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 
-const AuthConatainer = () => {
+function AuthContainer({ setIsAuthenticated }) {
+  const [isSignIn, setIsSignIn] = useState(true);
+
   return (
-    <div>
-      
+    <div className="auth-wrapper">
+      {isSignIn ? (
+        <SignIn
+          setIsSignIn={setIsSignIn}
+          setIsAuthenticated={setIsAuthenticated}
+        />
+      ) : (
+        <SignUp setIsSignIn={setIsSignIn} />
+      )}
     </div>
-  )
+  );
 }
 
-export default AuthConatainer
+export default AuthContainer;

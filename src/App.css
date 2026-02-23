@@ -1,42 +1,84 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Full Page Background */
+.auth-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffe4ec, #ffd6e7);
+}
+
+/* Card */
+.auth-card {
+  background: rgba(255, 255, 255, 0.9);
+ 
+  padding: 40px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Heading */
+.auth-card h2 {
+  margin-bottom: 25px;
+  color: #e75480;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Inputs */
+.auth-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: none;
+  background: #2f2f2f;
+  color: white;
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.auth-card input::placeholder {
+  color: #aaa;
 }
 
-.card {
-  padding: 2em;
+/* Button */
+.auth-card button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  background: #e75480;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.auth-card button:hover {
+  background: #d63c6b;
+  transform: scale(1.02);
+}
+
+/* Switch text */
+.auth-card p {
+  margin-top: 18px;
+  font-size: 14px;
+}
+
+.auth-card span {
+  color: #e75480;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Dashboard */
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffe4ec, #ffd6e7);
 }
