@@ -2,6 +2,7 @@
   "name": "signup",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://meghana-naidu17.github.io/Signup",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,11 +10,12 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d buid"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.13.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
